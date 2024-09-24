@@ -436,6 +436,7 @@ background: #543DA3;
       width: 100%;
       margin-top: 900px;
       padding: 10px;
+      height: 1000px;
     }
     .cont-3 h1{
       text-align: center;
@@ -466,6 +467,7 @@ background: #543DA3;
   
     .cont-4 {
       height: auto;
+      margin-top: 20px;
       width: 768px;
     }
     
