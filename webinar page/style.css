@@ -1,4 +1,22 @@
 
+@font-face {
+  font-family: 'Geomanist';
+  src: url('Fonts/Geomanist-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('Fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.mobile-only{
+  display: none;
+}
+body {
+  font-family: 'Geomanist', sans-serif;
+}
 .container{
 width: 100%;
 height: 100vh;
@@ -340,21 +358,41 @@ background: #543DA3;
       width: 100%;
       height: auto;
     }
-  
+    .mobile-only{
+      display: block;
+    }
+    .desktop-only{
+      display: none;
+    }
     .cont-1 {
       height: auto;
       padding: 20px;
+      width:768px;
+      font-size:20px ;
     }
-  
+    .cont-1 img{
+      width: 200px;
+      height:auto;
+      margin-left: -10px;
+    }
+
+    /* .cont-1 .btn{
+      height: auto;
+       width: 100px; 
+       margin-left: 1px;
+    } */
     .prc {
       font-size: 20px;
       line-height: 50px;
+      gap: 15px;
+      margin-left: 10px;
     }
   
     .btn-1, .btn-2 {
-      width: 180px;
+      width: 140px;
       height: 40px;
       font-size: 18px;
+      margin-left: -10px;
     }
   
     .cont-2 {
@@ -370,28 +408,43 @@ background: #543DA3;
     }
   
     .content {
-      font-size: 20px;
-      width: 100%;
+      font-size: 19px;
+      width: 760px;
+      margin: 0 auto;
+      padding-right: 5px;
     }
   
     .heading2 {
       flex-direction: column;
-      padding-top: 20px;
+      /* margin-top: -10px; */
+      width: auto;
+      padding-top: 140px;
+     
+
     }
   
     .sub {
-      font-size: 20px;
-      gap: 10px;
-      padding: 15px;
+      font-size: 30px;
+      /* gap: 5px; */
+      height: auto;
+      /* padding: 10px; */
+      width: 500px;
+      margin-left: 100px;
     }
   
     .cont-3 {
       width: 100%;
-      margin-top: 50px;
+      margin-top: 900px;
       padding: 10px;
+    }
+    .cont-3 h1{
+      text-align: center;
+      margin-top: -10px;
     }
   
     .form-box {
+      display: flex;
+      margin-left:-40px;
       flex-direction: column;
       gap: 20px;
     }
@@ -400,33 +453,76 @@ background: #543DA3;
       height: 60px;
       width: 100%;
     }
-  
+   .form-box .check{
+    display: flex;
+    gap: 10px;
+   }
+
     input[type="button"] {
-      width: 100%;
+      margin: 0 auto;
+      margin-top:60px;
       font-size: 30px;
     }
   
     .cont-4 {
       height: auto;
+      width: 768px;
     }
-  
+    
+    .cont-4 .para-2{
+      height: 20px;
+      padding-left: 230px;
+      margin-bottom:150px;
+      /* display: block; */
+    }
     .panel {
       text-align: center;
       padding: 20px;
+      font-size: 20px;
+      flex-direction: column;
+    }
+    .panel .para-3{
+      width: 700px;
+      
+    }
+    .panel span{
+      margin-left: 190px ;
+      padding-top: -1px;
     }
   
     .cont-5 {
       flex-direction: column;
-      text-align: center;
+      /* text-align: center; */
       gap: 20px;
+      height: auto;
+      font-size: 20px;
     }
-  
-    .class2 {
-      margin-left: 0;
+    .class1{
+      margin-left: 40px;
     }
-  
+    .class1 img{
+      width: 230px;
+      height: auto;
+    }
+    .blitz-para{
+      width: 60% ;
+    }
+    .class2  {
+     text-align: left;
+      /* display: flex; */
+      gap: 10px;
+    }
+    .mobile-only_1{
+      display: block;
+    }
+    .class3 .mobile-only_1{
+      margin-left: 40px;
+      height: 40px;
+    }
+
     .class4 {
-      margin-top: 20px;
+      margin-top: -20px;
+      margin-left: 40px;
     }
   
     .circle {
